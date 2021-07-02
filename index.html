@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">  
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="./dist/css/splide.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style1.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <style>
+    body {
+      background-color: rgb(248, 248, 248);
+    }
+    #primary-slider  {
+    height: 70vh !important;
+    background-size: 50vh;
+}
+
+.text-darken-4 {
+  font-size: 100px;
+  line-height: 100px;
+  font-family: 'anton';
+}
+
+
+#secondary-slider {
+  z-index: auto;
+}
+
+#secondary-slider .splide__track {
+  position: inherit;
+  left: -7vw;
+}
+
+.paralladx {
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  
+
+
+}
+
+.hero-text {
+  position: absolute;
+  height: 10vh;
+  z-index: 1;
+  top: 7vh;
+  left: 0;
+  text-align: center;
+  width: 100vw;
+  color: white;
+}
+#hero {
+  height: 10vh !important;
+  top: 10vh;
+}
+
+#splide__slide  {
+  height: 50vh !important;
+}
+
+.catchy {
+  margin-top:150px;
+  background-color: red;
+  width: 100vw;
+  height: 66vh;
+}
+  </style>
+</head>
+<body>
+  
+  <div class="header-scroll">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container" id="nav-wrapper">
+        <a id="logo-container" href="#" class="brand-logo">
+          <img width="130px" class=" responsive-img" id="logo-image" src="./img/logo-main.jpg" alt="" srcset="">
+        </a>
+        <ul class="right hide-on-med-and-down " id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="./galery.html">Galery</a></li>
+            <li id="feedback-box"><a href="#">Feedback</a>
+              <div class="feedback-box">
+                <div class="content">
+                  <div class="row">
+                    <header>Email Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Personal </a></li>
+                      <li><a href="#">Business </a></li>
+                      <li><a href="#">Mobile </a></li>
+                      <li><a href="#">Web </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li id="dropdown-menu-box">
+              <a href="#" class="desktop-item">Our work</a>
+              <div class="dropdown-menu-box">
+                <div class="content">
+                  <div class="row">
+                    <header>What we do</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Sport and Recreation</a></li>
+                      <li><a href="#">sychosocial Support</a></li>
+                      <li><a href="#">Educational Support</a></li>
+                      <li><a href="#">Socioeconomic Development</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li id="mega-box">
+              <a href="#" class="desktop-item">Contact</a>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <header>Email Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Personal </a></li>
+                      <li><a href="#">Business </a></li>
+                      <li><a href="#">Mobile </a></li>
+                      <li><a href="#">Web </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+        </ul>
+  
+        <ul id="nav-mobile" class="sidenav">
+          <a href="#">
+
+          <img width="40px" class="circle hide-on-med-and-up responsive-img" id="logo-image-mobile-nav" src="./img/logo2.png" alt="" srcset="">   
+          </a>
+          <div class="mob-link">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Our work</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Navbar Links</a></li>
+          </div>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+  </div>
+
+  <div id="index-banner" class="parallax-container ">
+<!--     <div class="section hero-text">
+      <div class="container">
+        <br><br>
+        <div class="row center hero-text">
+          <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
+          <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
+        </div>
+                 <div class="row center">
+          <a href=" " id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div> 
+        <br><br>
+
+      </div> -->
+    </div> 
+
+
+    <div class="paralladx " id="hero">
+      <!-- <img src="./img/IMG_9426a.jpg" alt="Unsplashed background img 1"> -->
+          <div class="splide" id="primary-slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide" id="splide__slide">
+
+                      <div class="section hero-text">
+                        <div class="container">
+                          <br><br>
+                          <div class="row center hero-text">
+                            <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
+                            <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
+                          </div>
+                          <!--         <div class="row center">
+                            <a href=" " id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                          </div> -->
+                          <br><br>
+                  
+                        </div>
+                      </div>
+                      <img src="./img/42_b.jpg" alt="">
+
+                    </li>
+                    <li class="splide__slide">
+
+                      <div class="section hero-text">
+                        <div class="container">
+                          <br><br>
+                          <div class="row center hero-text">
+                            <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
+                            <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
+                          </div>
+                          <!--         <div class="row center">
+                            <a href=" " id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                          </div> -->
+                          <br><br>
+                  
+                        </div>
+                      </div>
+                      <img src="./img/IMG_8188.JPG" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <div class="section hero-text">
+                        <div class="container">
+                          <br><br>
+                          <div class="row center hero-text">
+                            <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
+                            <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
+                          </div>
+                          <!--         <div class="row center">
+                            <a href=" " id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                          </div> -->
+                          <br><br>
+                  
+                        </div>
+                      </div>
+                      <img src="./img/IMG_9426a.jpg" alt="">
+
+                    </li>
+                    <li class="splide__slide">
+                      <div class="section hero-text">
+                        <div class="container">
+                          <br><br>
+                          <div class="row center hero-text">
+                            <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
+                            <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
+                          </div>
+                          <!--         <div class="row center">
+                            <a href=" " id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                          </div> -->
+                          <br><br>
+                  
+                        </div>
+                      </div>
+                      <img src="./img/new Stock/D.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+          <!-- Secondary -->
+
+          <div class="splide" id="secondary-slider">
+            <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="./img/42_b.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./img/IMG_8188.JPG" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./img/IMG_9426a.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./img/new Stock/D.jpg" alt="">
+                  </li>
+
+              </ul>
+          </div>
+            
+          </div>
+
+    </div>
+
+
+    <div class="parallax hide-on-med-and-up hide-on-small-only"><img src="./img/IMG_8176-mobile.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class=" catchy">
+    <div class="section">
+      <!--   Icon Section   -->
+<!--       <div class="row">
+        <div class="col s4 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"></h2>
+            <img class="" src="./img/new Stock/170058785_3675981989167287_3024542471017877593_n.jpg" alt="" srcset="">
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s4 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"></h2>
+            <img src="./img/new Stock/168813640_3675982795833873_7928800468777971775_n.jpg" alt="">
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s4 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"></h2>
+            <img class="" src="./img/new Stock/156135177_3569756773123143_2424160997565939839_n.jpg" alt="" srcset="">
+
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- half cards Desktop-->          
+      <div class="row" id="Work">
+        <div class="col s6 desktop hide-on-med-and-down">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/new Stock/23.jpg">
+              <span class="card-title z-depth-1" id="over-img">Cazz Photorgaphy</span>
+            </div>
+            <div class="card-content">
+              <p>Photography Portfolio for UK based artist.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Website Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 desktop hide-on-med-and-down">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/new Stock/21.jpg">
+              <span class="card-title z-depth-1" id="over-img">Pet Plate</span>
+            </div>
+            <div class="card-content">
+              <p>Website for pet plate.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Website Link</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- half cards Mobile-->          
+    <div class="col s12 low-res hide-on-med-and-up" id="Work">
+      <div class="card">
+        <div class="card-image">
+          <img src="./img/new Stock/23.jpg">
+          <span class="card-title z-depth-1 " id="over-img" >Cazz Photorgaphy</span>
+        </div>
+        <div class="card-content">
+          <p>Photography Portfolio for UK based artist.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Website Link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 low-res hide-on-med-and-up">
+      <div class="card">
+        <div class="card-image">
+          <img src="./img/new Stock/21.jpg">
+          <span class="card-title z-depth-1" id="over-img">Pet Plate</span>
+        </div>
+        <div class="card-content">
+          <p>Website for pet plate.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./img/IMG_7071.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./img/IMG_9300.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+  <!--  Scripts-->
+  <script src="./js/jquery.js"></script>
+<script src="./dist/js/splide.min.js"></script>
+  <script src="js/init.js"></script>
+<script src="js/materialize.js"></script> 
+
+<script>
+  var secondarySlider = new Splide( '#secondary-slider', {
+      rewind      : true,
+      fixedWidth  : 100,
+      fixedHeight : 64,
+      isNavigation: true,
+      gap         : 10,
+      focus       : 'center',
+      pagination  : false,
+      cover       : true,
+      breakpoints : {
+          '600': {
+              fixedWidth  : 66,
+              fixedHeight : 40,
+          }
+      }
+  } );
+
+  secondarySlider.mount();
+
+  secondarySlider.on( 'autoplay:playing', function ( rate ) {
+      console.log( rate ); // 0-1
+  } );
+
+  // Create the main slider.
+  var primarySlider = new Splide( '#primary-slider', {
+
+
+      type       : 'fade',
+      heightRatio: 0.5,
+      pagination : false,
+      arrows     : false,
+      cover      : true,
+  } );
+
+
+
+  // Set the thumbnails slider as a sync target and then call mount.
+  primarySlider.sync( secondarySlider ).mount();
+</script> 
+
+  </body>
+</html>
