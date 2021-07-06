@@ -6,10 +6,12 @@
  * Made By MaterializeCSS.com
  */
 
+ /* header */
  nav ul a,
  nav .brand-logo {
    color: rgb(7, 0, 0);
  }
+
 
 a {
   color: rgb(7, 0, 0);
@@ -34,26 +36,25 @@ a {
   line-height: 80px;
 }
 
-
+/* header */
  .header-scroll{
    position: fixed;
    top: 0px;
- /*   left: 9px;
-   right: 9px; */
    width: 100vw;
    height: 50px;
-   border: 1px dotted blue;
-   background-color: rgba(7, 2, 2, 0.719);
-   z-index: 1;
-   
+
+/*    background-color: rgba(7, 2, 2, 0.719); */
+   z-index: 1;  
  }
- 
+
+
+
  .hero-text{
    position: relative;
    top: 150px;
    width: 40vw;
    height: 40vh;
-
+  
  }
  
  
@@ -76,23 +77,7 @@ a {
      width: 100%;
    }
  
- @media only screen and (max-width : 500px) {
-   .parallax-container .section {
-     position: absolute;
-     top: 40%;
-   }
-   #index-banner .section {
-     top: 25%;
-   }
- }
- 
-  @media only screen and (max-width : 600px) {
-  #logo-image {
-    position: relative;
- 
-  }
- }  
- 
+
  .icon-block {
    padding: 0 15px;
  }
@@ -105,71 +90,74 @@ a {
  }
  
  
- /* Nav Scroll  */
- .mega-box {
+ /* *************** Nav Scroll ********************** */
+ .Programmes-menu-box {
    position: absolute;
 /*    right: -7vw; */
    background: #242526;
-   width: 40vw;
+   width: 15vw;
    line-height: 5px;
-   top: 50px;
+  left: 47%;
    opacity: 0;
    visibility: hidden;
    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-   border: 4px solid white;
-   border-radius: 10px;
+   border: 1px solid white;
+/*    border-radius: 15px; */
  }
 
  .feedback-box {
   position: absolute;
 /*   right: 15vw; */
-  background: #242526;
-  width: 40vw;
+/*   background: #f5f5f6; */
+  width: 15vw;
   line-height: 5px;
-  top: 50px;
+  left: 38%;
   opacity: 0;
   visibility: hidden;
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-  border: 4px solid white;
-  border-radius: 10px;
+  border: 1px solid white;
+/*   border-radius: 15px; */
 }
 
  .dropdown-menu-box {
   position: absolute;
 /*   right: -12vw; */
-  background: #242526;
-  width: 40vw;
+/*   background: #242526; */
+  width: 15vw;
   line-height: 15px;
-  top: 50px;
+  left: 57%;
   opacity: 0;
   visibility: hidden;
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-  border: 4px solid white;
-  border-radius: 10px;
+  border: 1px solid white;
+  /* border-radius: 10px; */
+  
 }
 
- #mega-box:hover .mega-box ,  #feedback-box:hover .feedback-box ,
+ #Programmes-menu-box:hover .Programmes-menu-box ,  #feedback-box:hover .feedback-box ,
  #dropdown-menu-box:hover .dropdown-menu-box {
    transition: all 0.3s ease-in;
    top: 60px;
    opacity: 1;
    visibility: visible;
    z-index: 1;
+
  }
 
- .mega-box .content , .feedback-box .content , 
+ .Programmes-menu-box .content , .feedback-box .content , 
  .dropdown-menu-box .content { 
-   background: #242526;
+ /*   background: #f6130b; */
    padding: 25px 20px;
    display: flex;
    width: 100%;
    justify-content: space-between;
    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  left: 100px;
 
  }
- .mega-box .content .row, .feedback-box .content .row,
+ .Programmes-menu-box .content .row, .feedback-box .content .row,
   .dropdown-menu-box .content .row {
-   width: 100px;
+   width: 250px;
    line-height: 40px;
  }
  
@@ -189,25 +177,52 @@ a {
    padding: 0px;
    padding: 0 20px;
    color: #d9d9d9;
-   font-size: 17px;
+   font-size: 12px;
    display: block;
  }
  .row .mega-links li a:hover{
-   color: #f2f2f2;
- }
- 
- .nav-links li a {
-   color: #f2f2f2;
-   text-decoration: none;
+   color: #ffffff;
+   border: 0px solid rgba(0,0,0,0.15);
+ /*   border-radius: 5px; */
    font-size: 15px;
-   font-weight: 500;
-   padding: 9px 15px;
-   border-radius: 5px;
-   transition: all 0.3s ease;
+   transition: 0.3s;
  }
- 
+
  /* Buttons */
  
- #download-button {
-   top:30vh;
+ #action-button {
+   top:60vh;
  }
+
+
+ .mobile-hero {
+   background-image: url(../img/IMG_9300.jpg);
+   height: 90vh;
+   top: 10vh;
+   margin-top: 10vh;
+   padding-top: 10vh;
+   font-size: 15px !important;
+ }
+
+ @media only screen and (max-width : 500px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 25%;
+  }
+  #action-button {
+    top:55vh;
+    display:none;
+  }
+}
+
+ @media only screen and (max-width : 992px) {
+ #logo-image {
+   position: relative;
+  height:8vh;
+ }
+
+
+}  

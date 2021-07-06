@@ -20,11 +20,13 @@
     body {
       background-color: rgb(248, 248, 248);
     }
-    #primary-slider  {
-    height: 70vh !important;
-    background-size: 50vh;
-}
 
+    #primary-slider  {
+    height: 70vh !important;;
+}
+#secondary-slider{
+    height: 80vh !important;;
+}
 .text-darken-4 {
   font-size: 100px;
   line-height: 100px;
@@ -44,10 +46,7 @@
 .paralladx {
   position: absolute;
   width: 100vw;
-  height: 10vh;
-  
-
-
+  height: 100vh;
 }
 
 .hero-text {
@@ -61,13 +60,10 @@
   color: white;
 }
 #hero {
-  height: 10vh !important;
+
   top: 10vh;
 }
 
-#splide__slide  {
-  height: 50vh !important;
-}
 
 .catchy {
   margin-top:150px;
@@ -77,8 +73,8 @@
 }
   </style>
 </head>
-<body>
-  
+<body >
+  <!-- ***************************** Desktop Only ************************ -->
   <div class="header-scroll">
     <nav class="white" role="navigation">
       <div class="nav-wrapper container" id="nav-wrapper">
@@ -87,56 +83,61 @@
         </a>
         <ul class="right hide-on-med-and-down " id="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="./galery.html">Galery</a></li>
-            <li id="feedback-box"><a href="#">Feedback</a>
-              <div class="feedback-box">
+          
+            <li id="feedback-box"><a href="#">About</a>
+              <div class="feedback-box red">
                 <div class="content">
                   <div class="row">
-                    <header>Email Services</header>
+                    <header>About Us</header>
                     <ul class="mega-links">
-                      <li><a href="#">Personal </a></li>
-                      <li><a href="#">Business </a></li>
-                      <li><a href="#">Mobile </a></li>
-                      <li><a href="#">Web </a></li>
+                      <li><a href="#">Overview </a></li>
+                      <li><a href="#">What we do</a></li>
+                      <li><a href="#">Vision & Mission</a></li>
+                      <li><a href="#">Our Board</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
             </li>
 
-            <li id="dropdown-menu-box">
-              <a href="#" class="desktop-item">Our work</a>
-              <div class="dropdown-menu-box">
+            <li class="" id="Programmes-menu-box">
+              <a href="#" class="  desktop-item">Programmes</a>
+              <div class="Programmes-menu-box red">
                 <div class="content">
                   <div class="row">
-                    <header>What we do</header>
+                    <header>Our Programmes</header>
                     <ul class="mega-links">
-                      <li><a href="#">Sport and Recreation</a></li>
-                      <li><a href="#">sychosocial Support</a></li>
-                      <li><a href="#">Educational Support</a></li>
-                      <li><a href="#">Socioeconomic Development</a></li>
+                      <li><a href="#">Sports</a></li>
+                      <li><a href="#">Psychosocial</a></li>
+                      <li><a href="#">Educational </a></li>
+                      <li><a href="#">Socioeconomic </a></li>
                     </ul>
                   </div>
                 </div>
               </div>
             </li>
 
-            <li id="mega-box">
+            <li class="" id="dropdown-menu-box">
+              <a href="#" class="desktop-item">Impact</a>
+              <div class="dropdown-menu-box red">
+                <div class="content">
+                  <div class="row">
+                    <header>Our Impact</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Success Stories</a></li>
+                      <li><a href="#">Impact</a></li>
+                      <li><a href="#">Ambassadors</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li id="Contact-box">
               <a href="#" class="desktop-item">Contact</a>
-              <div class="mega-box">
-                <div class="content">
-                  <div class="row">
-                    <header>Email Services</header>
-                    <ul class="mega-links">
-                      <li><a href="#">Personal </a></li>
-                      <li><a href="#">Business </a></li>
-                      <li><a href="#">Mobile </a></li>
-                      <li><a href="#">Web </a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </li>
+            <li id="Galery-box"><a href="#" class="desktop-item">Galery</a></li>
+            <li><a href=" " id="download-button" class="btn-small  red lighten-1 ">Donate</a></li>
         </ul>
   
         <ul id="nav-mobile" class="sidenav">
@@ -145,35 +146,38 @@
           <img width="40px" class="circle hide-on-med-and-up responsive-img" id="logo-image-mobile-nav" src="./img/logo2.png" alt="" srcset="">   
           </a>
           <div class="mob-link">
+            <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">Our work</a></li>
+            <li><a href="#">Programmes</a></li>
+            <li><a href="#">Impact</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Navbar Links</a></li>
+            <li><a href="./galery.html">Galery</a></li>
+            <li><a href=" " id="download-button" class="btn-small  red ">Donate</a></li>
           </div>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
   </div>
 
-  <div id="index-banner" class="parallax-container ">
-<!--     <div class="section hero-text">
+
+  <!-- ***************************** Desktop Only ************************ -->
+  <div id="index-banner" class=" hide-on-med-and-down  parallax-container ">
+    <div class="section hero-text">
       <div class="container">
         <br><br>
-        <div class="row center hero-text">
+          <!--         <div class="row center hero-text">
           <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
           <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
-        </div>
-                 <div class="row center">
-          <a href=" " id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div> -->
+        <div class="row center">
+          <a href=" " id="action-button" class="btn-large waves-effect waves-light red  lighten-1">Get involved</a>
         </div> 
         <br><br>
 
-      </div> -->
+      </div> 
     </div> 
 
-
-    <div class="paralladx " id="hero">
+    <div class=" hide-on-med-and-down paralladx " id="hero">
       <!-- <img src="./img/IMG_9426a.jpg" alt="Unsplashed background img 1"> -->
           <div class="splide" id="primary-slider">
             <div class="splide__track">
@@ -260,7 +264,7 @@
             <div class="splide__track">
               <ul class="splide__list">
                   <li class="splide__slide">
-                    <img src="./img/42_b.jpg" alt="">
+                    <img  src="./img/42_b.jpg" alt="">
                   </li>
                   <li class="splide__slide">
                     <img src="./img/IMG_8188.JPG" alt="">
@@ -271,7 +275,6 @@
                   <li class="splide__slide">
                     <img src="./img/new Stock/D.jpg" alt="">
                   </li>
-
               </ul>
           </div>
             
@@ -283,11 +286,19 @@
     <div class="parallax hide-on-med-and-up hide-on-small-only"><img src="./img/IMG_8176-mobile.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
+  <!-- ***************************** Mobile Only ************************ -->
+  <div class=" hide-on-med-and-up mobile-hero">
+    <div class=" center ">
+      <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
+      <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
+    </div>
+    
+  </div>
 
   <div class=" catchy">
     <div class="section">
       <!--   Icon Section   -->
-<!--       <div class="row">
+    <!--       <div class="row">
         <div class="col s4 m4">
           <div class="icon-block">
             <h2 class="center brown-text"></h2>
@@ -326,10 +337,10 @@
           <div class="card">
             <div class="card-image">
               <img src="./img/new Stock/23.jpg">
-              <span class="card-title z-depth-1" id="over-img">Cazz Photorgaphy</span>
+              <span class="card-title z-depth-1" id="over-img">Celebrate Excellence</span>
             </div>
             <div class="card-content">
-              <p>Photography Portfolio for UK based artist.</p>
+              <p>We award excellence</p>
             </div>
             <div class="card-action">
               <a href="#">Website Link</a>
@@ -341,10 +352,10 @@
           <div class="card">
             <div class="card-image">
               <img src="./img/new Stock/21.jpg">
-              <span class="card-title z-depth-1" id="over-img">Pet Plate</span>
+              <span class="card-title z-depth-1" id="over-img">We celebrate champions</span>
             </div>
             <div class="card-content">
-              <p>Website for pet plate.</p>
+              <p>Embrace champions</p>
             </div>
             <div class="card-action">
               <a href="#">Website Link</a>
@@ -358,10 +369,10 @@
       <div class="card">
         <div class="card-image">
           <img src="./img/new Stock/23.jpg">
-          <span class="card-title z-depth-1 " id="over-img" >Cazz Photorgaphy</span>
+          <span class="card-title z-depth-1" id="over-img">Celebrate Excellence</span>
         </div>
         <div class="card-content">
-          <p>Photography Portfolio for UK based artist.</p>
+          <p>We award excellence</p>
         </div>
         <div class="card-action">
           <a href="#">Website Link</a>
@@ -373,10 +384,10 @@
       <div class="card">
         <div class="card-image">
           <img src="./img/new Stock/21.jpg">
-          <span class="card-title z-depth-1" id="over-img">Pet Plate</span>
+          <span class="card-title z-depth-1" id="over-img">We celebrate champions</span>
         </div>
         <div class="card-content">
-          <p>Website for pet plate.</p>
+          <p>Embrace champions</p>
         </div>
         <div class="card-action">
           <a href="#">This is a link</a>
@@ -392,7 +403,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">A world of champions</h5>
         </div>
       </div>
     </div>
@@ -405,8 +416,8 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h4>What we do</h4>
+          <p class="left-align light">In response to social ills that have negative effects in underprivileged communities, Co-founders, Raymond Ledwaba and Phehello Monamodi established Diski Nine9 as a way to change the narrative by providing youths from Soweto with a platform to play sports in a safe place and realise their talents to become better professionals, leaders and role models in their communities. The following are the Programmes we use to counteract these social ills</p>
         </div>
       </div>
 
@@ -429,9 +440,8 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
+          <h5 class="white-text">Diski Nine9</h5>
+          <p class="grey-text text-lighten-4">Diski Nine9 Africa is a registered non-profit company based in Soweto, South Africa (Reg no: 2015/447508/08). Diski Nine9 was formed in 2015 and our objective is to use sport, notably soccer and netball as a tool to educate and empower young Africans. “Diski” is a slang term used in South Africa to describe the biggest and most loved sport around the world – Soccer. “Nine9” is a slang term meaning Authentic or Real.</p>
 
         </div>
         <div class="col l3 s12">
@@ -456,7 +466,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      copyright <a class="brown-text text-lighten-3" href="http://materializecss.com">DiskiNine9</a>
       </div>
     </div>
   </footer>
@@ -492,8 +502,6 @@
 
   // Create the main slider.
   var primarySlider = new Splide( '#primary-slider', {
-
-
       type       : 'fade',
       heightRatio: 0.5,
       pagination : false,
