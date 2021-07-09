@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
+  <title>Diski Nine9</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,19 +13,26 @@
   <!-- CSS  -->
   <link rel="stylesheet" href="./dist/css/splide.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style1.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@splidejs/splide@2.3.1/dist/css/splide.min.css'>
+  
 
   <style>
     body {
       background-color: rgb(248, 248, 248);
     }
 
+
     #primary-slider  {
     height: 70vh !important;;
 }
 #secondary-slider{
-    height: 80vh !important;;
+    height: 80vh !important;
+    z-index: auto;
 }
 .text-darken-4 {
   font-size: 100px;
@@ -33,10 +40,6 @@
   font-family: 'anton';
 }
 
-
-#secondary-slider {
-  z-index: auto;
-}
 
 #secondary-slider .splide__track {
   position: inherit;
@@ -53,7 +56,7 @@
   position: absolute;
   height: 10vh;
   z-index: 1;
-  top: 7vh;
+  top: 20vh;
   left: 0;
   text-align: center;
   width: 100vw;
@@ -72,8 +75,20 @@
   height: 66vh;
 }
   </style>
+
+<script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 </head>
-<body >
+<body translate="no" >
   <!-- ***************************** Desktop Only ************************ -->
   <div class="header-scroll">
     <nav class="white" role="navigation">
@@ -81,7 +96,7 @@
         <a id="logo-container" href="#" class="brand-logo">
           <img width="130px" class=" responsive-img" id="logo-image" src="./img/logo-main.jpg" alt="" srcset="">
         </a>
-        <ul class="right hide-on-med-and-down " id="nav-links">
+        <ul class="right hide-on-small-only " id="nav-links">
             <li><a href="#">Home</a></li>
           
             <li id="feedback-box"><a href="#">About</a>
@@ -138,12 +153,12 @@
             </li>
             <li id="Galery-box"><a href="#" class="desktop-item">Galery</a></li>
             <li><a href=" " id="download-button" class="btn-small  red lighten-1 ">Donate</a></li>
-        </ul>
+      </ul>
   
-        <ul id="nav-mobile" class="sidenav">
+      <ul id="nav-mobile" class="sidenav">
           <a href="#">
 
-          <img width="40px" class="circle hide-on-med-and-up responsive-img" id="logo-image-mobile-nav" src="./img/logo2.png" alt="" srcset="">   
+          <img width="40px" class="circle hide-on-large-only responsive-img" id="logo-image-mobile-nav" src="./img/logo2.png" alt="" srcset="">   
           </a>
           <div class="mob-link">
             <li><a href="#">Home</a></li>
@@ -154,182 +169,116 @@
             <li><a href="./galery.html">Galery</a></li>
             <li><a href=" " id="download-button" class="btn-small  red ">Donate</a></li>
           </div>
-        </ul>
+      </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      </div>
+    </div>
   </div>
 
 
   <!-- ***************************** Desktop Only ************************ -->
-  <div id="index-banner" class=" hide-on-med-and-down  parallax-container ">
+  <div id="index-banner" class=" hide-on-small-only  parallax-container ">
     <div class="section hero-text">
       <div class="container">
-        <br><br>
-          <!--         <div class="row center hero-text">
-          <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
+         <div class="row center ">
+          <h1 class="header center white-text text-darken-4">Welcome to Diski Nine9</h1>
           <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
-        </div> -->
-        <div class="row center">
-          <a href=" " id="action-button" class="btn-large waves-effect waves-light red  lighten-1">Get involved</a>
         </div> 
-        <br><br>
+
+        <div class="row center">
+          <a href="#modal1" id="action-button" class="btn-large waves-effect waves-light red modal-trigger  lighten-1">Get involved</a>
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Join Us</h4>
+              <p>Become a donor</p>
+              <p>Become a volunteer</p>
+              <p>Careers</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">CLOSE</a>
+            </div>
+          </div>
+        </div> 
 
       </div> 
     </div> 
 
-    <div class=" hide-on-med-and-down paralladx " id="hero">
-      <!-- <img src="./img/IMG_9426a.jpg" alt="Unsplashed background img 1"> -->
-          <div class="splide" id="primary-slider">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide" id="splide__slide">
-
-                      <div class="section hero-text">
-                        <div class="container">
-                          <br><br>
-                          <div class="row center hero-text">
-                            <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
-                            <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
+                      <!-- <div class=" hide-on-small-only paralladx " id="hero">
+                            <div class="splide" id="primary-slider">
+                              <div class="splide__track">
+                                  <ul class="splide__list">
+                                      <li class="splide__slide" id="splide__slide">
+                                        <img src="./img/42_b.jpg" alt="">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="./img/IMG_8188.JPG" alt="">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="./img/IMG_9426a.jpg" alt="">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="./img/new Stock/D.jpg" alt="">
+                                      </li>
+                                  </ul>
+                              </div>
                           </div>
-                          <!--         <div class="row center">
-                            <a href=" " id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-                          </div> -->
-                          <br><br>
-                  
-                        </div>
                       </div>
-                      <img src="./img/42_b.jpg" alt="">
+                  -->
 
-                    </li>
-                    <li class="splide__slide">
+    <div id="splide">
+      <div class="splide__track" id="splide-track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img height="660px" width="100%" src="./img/42_b.jpg" alt="">
+          </li>
+          <li class="splide__slide">
+            <img height="660px" width="100%" src="./img/IMG_8188.JPG" alt="">
+          </li>
+          <li class="splide__slide">
+            <img height="660px" width="100%" src="./img/IMG_9426a.jpg" alt="">
+          </li>
+          <li class="splide__slide">
+            <img height="660px" width="100%" src="./img/new Stock/D.jpg" alt="">
+          </li>
+        </ul> 
+      </div> 
+    </div>  
 
-                      <div class="section hero-text">
-                        <div class="container">
-                          <br><br>
-                          <div class="row center hero-text">
-                            <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
-                            <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
-                          </div>
-                          <!--         <div class="row center">
-                            <a href=" " id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-                          </div> -->
-                          <br><br>
-                  
-                        </div>
-                      </div>
-                      <img src="./img/IMG_8188.JPG" alt="">
-                    </li>
-                    <li class="splide__slide">
-                      <div class="section hero-text">
-                        <div class="container">
-                          <br><br>
-                          <div class="row center hero-text">
-                            <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
-                            <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
-                          </div>
-                          <!--         <div class="row center">
-                            <a href=" " id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-                          </div> -->
-                          <br><br>
-                  
-                        </div>
-                      </div>
-                      <img src="./img/IMG_9426a.jpg" alt="">
-
-                    </li>
-                    <li class="splide__slide">
-                      <div class="section hero-text">
-                        <div class="container">
-                          <br><br>
-                          <div class="row center hero-text">
-                            <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
-                            <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
-                          </div>
-                          <!--         <div class="row center">
-                            <a href=" " id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-                          </div> -->
-                          <br><br>
-                  
-                        </div>
-                      </div>
-                      <img src="./img/new Stock/D.jpg" alt="">
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-          <!-- Secondary -->
-
-          <div class="splide" id="secondary-slider">
-            <div class="splide__track">
-              <ul class="splide__list">
-                  <li class="splide__slide">
-                    <img  src="./img/42_b.jpg" alt="">
-                  </li>
-                  <li class="splide__slide">
-                    <img src="./img/IMG_8188.JPG" alt="">
-                  </li>
-                  <li class="splide__slide">
-                    <img src="./img/IMG_9426a.jpg" alt="">
-                  </li>
-                  <li class="splide__slide">
-                    <img src="./img/new Stock/D.jpg" alt="">
-                  </li>
-              </ul>
-          </div>
-            
-          </div>
-
-    </div>
-
-
-    <div class="parallax hide-on-med-and-up hide-on-small-only"><img src="./img/IMG_8176-mobile.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
+
+
   <!-- ***************************** Mobile Only ************************ -->
-  <div class=" hide-on-med-and-up mobile-hero">
-    <div class=" center ">
-      <h1 class="header center while-text text-darken-4">Welcome to Diski Nine9</h1>
+  <div class=" hide-on-med-and-up mobisle-hero">
+<!-- <div class=" center ">
+      <h1 class="header center white-text text-darken-4">Welcome to Diski Nine9</h1>
       <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
-    </div>
+    </div>  -->
+
+    <!-- Splide -->
+    <div id="splide">
+      <div class="splide__track" id="splide-track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img height="80%" width="20%" src="./img/42_b.jpg" alt="">
+          </li>
+          <li class="splide__slide">
+            <img height="660px" width="100%" src="./img/IMG_8188.JPG" alt="">
+          </li>
+          <li class="splide__slide">
+            <img height="660px" width="100%" src="./img/IMG_9426a.jpg" alt="">
+          </li>
+          <li class="splide__slide">
+            <img height="660px" width="100%" src="./img/new Stock/D.jpg" alt="">
+          </li>
+        </ul> 
+      </div> 
+    </div>  
+
     
   </div>
 
   <div class=" catchy">
     <div class="section">
-      <!--   Icon Section   -->
-    <!--       <div class="row">
-        <div class="col s4 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"></h2>
-            <img class="" src="./img/new Stock/170058785_3675981989167287_3024542471017877593_n.jpg" alt="" srcset="">
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s4 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"></h2>
-            <img src="./img/new Stock/168813640_3675982795833873_7928800468777971775_n.jpg" alt="">
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s4 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"></h2>
-            <img class="" src="./img/new Stock/156135177_3569756773123143_2424160997565939839_n.jpg" alt="" srcset="">
-
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div> -->
 
       <!-- half cards Desktop-->          
       <div class="row" id="Work">
@@ -477,43 +426,95 @@
 <script src="js/materialize.js"></script> 
 
 <script>
-  var secondarySlider = new Splide( '#secondary-slider', {
-      rewind      : true,
-      fixedWidth  : 100,
-      fixedHeight : 64,
-      isNavigation: true,
-      gap         : 10,
-      focus       : 'center',
-      pagination  : false,
-      cover       : true,
-      breakpoints : {
-          '600': {
-              fixedWidth  : 66,
-              fixedHeight : 40,
-          }
-      }
-  } );
-
-  secondarySlider.mount();
-
-  secondarySlider.on( 'autoplay:playing', function ( rate ) {
-      console.log( rate ); // 0-1
-  } );
 
   // Create the main slider.
   var primarySlider = new Splide( '#primary-slider', {
       type       : 'fade',
       heightRatio: 0.5,
-      pagination : false,
+      pagination : true,
       arrows     : false,
       cover      : true,
+      rewind      : true,
+      isNavigation: true,
+      focus       : 'center',
   } );
-
-
-
+  primarySlider.on( 'autoplay:playing', function ( rate ) {
+      console.log( rate ); // 0-1
+  } );
   // Set the thumbnails slider as a sync target and then call mount.
-  primarySlider.sync( secondarySlider ).mount();
+  primarySlider.mount();
+
+
+  /* SLide */
+  
+
+
+
+//Modal
+$(document).ready(function(){
+    $('.modal').modal();
+  });
 </script> 
+<script>
+  setInterval(function(){
+   $( "input" ).trigger("click");
+},random(3000,4000));
+
+function random(min,max){
+   return min + (max - min) * Math.random()
+} 
+</script>
+
+<script id="rendered-js" >
+  // SplideJS Slider. See full docs at:
+  // https://splidejs.com/
+  document.addEventListener('DOMContentLoaded', function () {
+    var splide = new Splide('#splide', {
+      type: 'loop',
+      perPage: 1,
+      autoplay: true,
+      arrows : false,
+      interval: 3000, // How long to display each slide
+      pauseOnHover: false, // must be false
+      pauseOnFocus: false, // must be false
+      resetProgress: false }).
+    mount();
+  
+    var button = document.querySelector('.splide__play-pause');
+  
+    if (button) {
+      var pausedClass = 'is-paused';
+  
+      // Remove the paused class and change the label to "Pause".
+      splide.on('autoplay:play', function () {
+        button.classList.remove(pausedClass);
+        button.textContent = 'Pause';
+        button.setAttribute('aria-label', 'Pause Autoplay');
+      });
+  
+      // Add the paused class and change the label to "Play".
+      splide.on('autoplay:pause', function () {
+        button.classList.add(pausedClass);
+        button.textContent = 'Play';
+        button.setAttribute('aria-label', 'Start Autoplay');
+      });
+  
+      // Toggle play/pause when the button is clicked.
+      splide.on('click', function () {
+        var flag = 99;
+        var Autoplay = splide.Components.Autoplay;
+  
+        if (button.classList.contains(pausedClass)) {
+          Autoplay.play(flag);
+        } else {
+          Autoplay.pause(flag);
+        }
+      }, button);
+    }
+  });
+  //# sourceURL=pen.js
+      </script>
+  
 
   </body>
 </html>

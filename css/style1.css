@@ -46,18 +46,8 @@ a {
 /*    background-color: rgba(7, 2, 2, 0.719); */
    z-index: 1;  
  }
-
-
-
- .hero-text{
-   position: relative;
-   top: 150px;
-   width: 40vw;
-   height: 40vh;
-  
- }
  
- 
+
  p {
    line-height: 2rem;
  }
@@ -191,18 +181,25 @@ a {
  /* Buttons */
  
  #action-button {
-   top:60vh;
+   top:5vh;
  }
 
 
  .mobile-hero {
-   background-image: url(../img/IMG_9300.jpg);
+/*    background-image: url(../img/IMG_9300.jpg); */
    height: 90vh;
    top: 10vh;
    margin-top: 10vh;
    padding-top: 10vh;
    font-size: 15px !important;
  }
+
+ .modal-content {
+   color: black;
+ }
+
+
+
 
  @media only screen and (max-width : 500px) {
   .parallax-container .section {
@@ -222,7 +219,10 @@ a {
  #logo-image {
    position: relative;
   height:8vh;
+  right: 40vh;
  }
+
+
 
 
 }  
