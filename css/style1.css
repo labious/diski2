@@ -34,7 +34,13 @@ a {
   top: 100px;
   left: 0;
   line-height: 80px;
+
 }
+.mob-link li:last-of-type {
+ margin-top: 25px;
+}
+
+
 
 /* header */
  .header-scroll{
@@ -50,6 +56,9 @@ a {
 
  p {
    line-height: 2rem;
+ }
+ .sidenav {
+   background-color: rgb(219, 81, 81);
  }
  
  .sidenav-trigger {
@@ -77,8 +86,35 @@ a {
  
  footer.page-footer {
    margin: 0;
+   padding: 20px;
  }
+ .grey-text {
+   width: 80%;
+ }
+
  
+ .footer-list {
+   padding: 0 20px 0 0;
+ }
+ .footer-list li {
+   line-height: 35px;
+   color: #a6acb1;
+ }
+ .mobile-footer-list li {
+   line-height: 25px;
+   color: #a6acb1;
+  }
+
+  .footer-copyright a {
+    color: white;
+    right: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+ .socials i {
+   margin: 10px;
+ }
  
  /* *************** Nav Scroll ********************** */
  .Programmes-menu-box {
@@ -197,6 +233,7 @@ a {
  .modal-content {
    color: black;
  }
+
 
 
 
