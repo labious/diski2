@@ -24,7 +24,7 @@
 
   <style>
     body {
-      background-color: rgb(248, 248, 248);
+      background-color: rgb(155, 35, 35);
     }
 
 
@@ -70,8 +70,8 @@
 
 
 .catchy {
-  margin-top:150px;
-  background-color: red;
+ 
+  
   width: 100vw;
   height: 66vh;
 }
@@ -184,8 +184,8 @@
 
 
   <!-- ***************************** Desktop Only ************************ -->
-  <div id="index-banner" class=" hide-on-small-only  parallax-container ">
-    <div class="section hero-text">
+  <div id="index-banner" class="   parallax-container ">
+    <div class="section hero-text hide-on-small-only">
       <div class="container">
          <div class="row center ">
           <h1 class="header center white-text text-darken-4">Welcome to Diski Nine9</h1>
@@ -210,7 +210,7 @@
       </div> 
     </div> 
 
-                      <!-- <div class=" hide-on-small-only paralladx " id="hero">
+                      <!--  <div class=" hide-on-small-only paralladx " id="hero">
                             <div class="splide" id="primary-slider">
                               <div class="splide__track">
                                   <ul class="splide__list">
@@ -229,65 +229,63 @@
                                   </ul>
                               </div>
                           </div>
-                      </div>
-                  -->
+                      </div> -->
+                  
 
     <div id="splide">
       <div class="splide__track" id="splide-track">
         <ul class="splide__list">
           <li class="splide__slide">
-             <img height="660px" width="100%" src="./img/42_b.jpg" alt="">
+             <img height="100%" width="100%"  srcset="./img/42_small.jpg 375w,./img/42_b.jpg 1500w" src="" alt="">
           </li>
           <li class="splide__slide">
-            <img height="660px" width="100%" src="./img/IMG_8188.JPG" alt="">
+            <img height="100%" width="100%" srcset="./img/IMG_8188_small.JPG 375w,./img/IMG_8188.JPG  1500w" src="" alt="">
+            <!-- <img height="660px" width="100%" src="./img/IMG_8188.JPG" alt=""> -->
           </li>
           <li class="splide__slide">
-            <img height="660px" width="100%" src="./img/IMG_9426a.jpg" alt="">
+            <img height="100%" width="100%"  srcset="./img/IMG_9426_small.jpg 500w,./img/IMG_9426.jpg  900w" src="" alt="">
+            <!-- <img height="100%" width="100%" src="./img/IMG_9426a.jpg" alt=""> -->
           </li>
           <li class="splide__slide">
-            <img height="660px" width="100%" src="./img/new Stock/D.jpg" alt="">
+            <img height="580px" width="100%" src="./img/new Stock/D.jpg" alt="">
           </li>
         </ul> 
       </div> 
-    </div>  
+    </div>   
 
   </div>
 
 
 
   <!-- ***************************** Mobile Only ************************ -->
-  <div class=" hide-on-med-and-up mobisle-hero">
-<!-- <div class=" center ">
-      <h1 class="header center white-text text-darken-4">Welcome to Diski Nine9</h1>
-      <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
-    </div>  -->
+<!--   <div class=" hide-on-med-and-up mobisle-hero">
+         <div class=" center ">
+              <h1 class="header center white-text text-darken-4">Welcome to Diski Nine9</h1>
+              <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
+            </div>  
 
-    <!-- Splide -->
-    <div id="splide">
-      <div class="splide__track" id="splide-track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <img height="80%" width="20%" src="./img/42_b.jpg" alt="">
-          </li>
-          <li class="splide__slide">
-            <img height="660px" width="100%" src="./img/IMG_8188.JPG" alt="">
-          </li>
-          <li class="splide__slide">
-            <img height="660px" width="100%" src="./img/IMG_9426a.jpg" alt="">
-          </li>
-          <li class="splide__slide">
-            <img height="660px" width="100%" src="./img/new Stock/D.jpg" alt="">
-          </li>
-        </ul> 
-      </div> 
-    </div>  
-
-    
-  </div>
+      <div id="splide">
+        <div class="splide__track" id="splide-track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img height="80%" width="20%" src="./img/42_b.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img height="660px" width="100%" src="./img/IMG_8188.JPG" alt="">
+            </li>
+            <li class="splide__slide">
+              <img height="660px" width="100%" src="./img/IMG_9426a.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img height="660px" width="100%" src="./img/new Stock/D.jpg" alt="">
+            </li>
+          </ul> 
+        </div> 
+      </div>  
+  </div> -->
 
   <div class=" catchy">
     <div class="section">
-
       <!-- half cards Desktop-->          
       <div class="row" id="Work">
         <div class="col s6 desktop hide-on-med-and-down">
@@ -369,7 +367,6 @@
 
   <div class="container">
     <div class="section">
-
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -386,7 +383,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">Our Vision is to identify and nurture the next generation of responsible</h5>
         </div>
       </div>
     </div>
@@ -500,7 +497,7 @@
 <script>
 
   // Create the main slider.
-  var primarySlider = new Splide( '#primary-slider', {
+/*   var primarySlider = new Splide( '#primary-slider', {
       type       : 'fade',
       heightRatio: 0.5,
       pagination : true,
@@ -515,7 +512,7 @@
   } );
   // Set the thumbnails slider as a sync target and then call mount.
   primarySlider.mount();
-
+ */
 
   /* SLide */
   
@@ -546,7 +543,7 @@ function random(min,max){
       perPage: 1,
       autoplay: true,
       arrows : false,
-      interval: 3000, // How long to display each slide
+      interval: 4000, // How long to display each slide
       pauseOnHover: false, // must be false
       pauseOnFocus: false, // must be false
       resetProgress: false }).
