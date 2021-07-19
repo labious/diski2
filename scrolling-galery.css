@@ -2,33 +2,7 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
-.header, .footer {
-  background: #2e2e2e;
-  color: #fff;
-  padding: 30px;
-  text-align: center; }
-  .header a, .footer a {
-    color: #fff; }
-  @media (min-width: 768px) {
-    .header, .footer {
-      padding: 100px 30px; } }
-  .header h1, .footer h1 {
-    font-size: 4em;
-    font-weight: 300; }
-  .header i.fa, .footer i.fa {
-    font-size: 4em; }
-  .header .bounce, .footer .bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite; }
-  .header .animated, .footer .animated {
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both; }
+
 
 .section {
   width: 100%;
@@ -134,7 +108,7 @@ body {
         display: block; } }
   .section .middle {
     background: slategray;
-    z-index: 2;
+    z-index: -5;
     padding: 0; }
     .section .middle img {
       width: 100%;
@@ -156,3 +130,8 @@ body {
     transform: translateY(-20px); }
   60% {
     transform: translateY(-10px); } }
+
+    .pro {
+      margin-top:10vh ;
+      z-index: -5;
+    }

@@ -18,64 +18,7 @@
   <link href="css/style1.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@splidejs/splide@2.3.1/dist/css/splide.min.css'>
-  
-
-  <style>
-    body {
-      background-color: rgb(155, 35, 35);
-    }
-
-
-    #primary-slider  {
-    height: 70vh !important;;
-}
-#secondary-slider{
-    height: 80vh !important;
-    z-index: auto;
-}
-.text-darken-4 {
-  font-size: 100px;
-  line-height: 100px;
-  font-family: 'anton';
-}
-
-
-#secondary-slider .splide__track {
-  position: inherit;
-  left: -7vw;
-}
-
-.paralladx {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-}
-
-.hero-text {
-  position: absolute;
-  height: 10vh;
-  z-index: 1;
-  top: 20vh;
-  left: 0;
-  text-align: center;
-  width: 100vw;
-  color: white;
-}
-#hero {
-
-  top: 10vh;
-}
-
-
-.catchy {
- 
-  
-  width: 100vw;
-  height: 66vh;
-}
-  </style>
 
 <script>
   window.console = window.console || function(t) {};
@@ -100,7 +43,7 @@
         <ul class="right hide-on-small-only " id="nav-links">
             <li><a href="#">Home</a></li>
           
-            <li id="feedback-box"><a href="#">About</a>
+            <li id="feedback-box"><a href="About-us.html">About</a>
               <div class="feedback-box red">
                 <div class="content">
                   <div class="row">
@@ -117,7 +60,7 @@
             </li>
 
             <li class="" id="Programmes-menu-box">
-              <a href="#" class="  desktop-item">Programmes</a>
+              <a href="programmes.html" class="  desktop-item">Programmes</a>
               <div class="Programmes-menu-box red">
                 <div class="content">
                   <div class="row">
@@ -163,8 +106,8 @@
           </a>
           <div class="mob-link">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Programmes</a></li>
+            <li><a href="About-us.html">About</a></li>
+            <li><a href="programmes.html">Programmes</a></li>
             <li><a href="#">Impact</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="./galery.html">Galery</a></li>
@@ -185,10 +128,10 @@
 
   <!-- ***************************** Desktop Only ************************ -->
   <div id="index-banner" class="   parallax-container ">
-    <div class="section hero-text hide-on-small-only">
+    <div class="section hero-text ">
       <div class="container">
          <div class="row center ">
-          <h1 class="header center white-text text-darken-4">Welcome to Diski Nine9</h1>
+          <h1 class="header center white-text text-darken-4"> Welcome <span class="break"> to  </span> <span class="break"> Diski Nine9 </span> </h1>
           <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
         </div> 
 
@@ -209,80 +152,29 @@
 
       </div> 
     </div> 
-
-                      <!--  <div class=" hide-on-small-only paralladx " id="hero">
-                            <div class="splide" id="primary-slider">
-                              <div class="splide__track">
-                                  <ul class="splide__list">
-                                      <li class="splide__slide" id="splide__slide">
-                                        <img src="./img/42_b.jpg" alt="">
-                                      </li>
-                                      <li class="splide__slide">
-                                        <img src="./img/IMG_8188.JPG" alt="">
-                                      </li>
-                                      <li class="splide__slide">
-                                        <img src="./img/IMG_9426a.jpg" alt="">
-                                      </li>
-                                      <li class="splide__slide">
-                                        <img src="./img/new Stock/D.jpg" alt="">
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div> -->
-                  
+          
 
     <div id="splide">
       <div class="splide__track" id="splide-track">
         <ul class="splide__list">
           <li class="splide__slide">
-             <img height="100%" width="100%"  srcset="./img/42_small.jpg 375w,./img/42_b.jpg 1500w" src="" alt="">
+             <img height="660px" width="100%"  srcset="./img/42_small.jpg 375w,./img/42_b.jpg 1500w" src="" alt="">
           </li>
           <li class="splide__slide">
-            <img height="100%" width="100%" srcset="./img/IMG_8188_small.JPG 375w,./img/IMG_8188.JPG  1500w" src="" alt="">
+            <img height="660px" width="100%" srcset="./img/IMG_8188_small.JPG 375w,./img/IMG_8188.JPG  1500w" src="" alt="">
             <!-- <img height="660px" width="100%" src="./img/IMG_8188.JPG" alt=""> -->
           </li>
           <li class="splide__slide">
-            <img height="100%" width="100%"  srcset="./img/IMG_9426_small.jpg 500w,./img/IMG_9426.jpg  900w" src="" alt="">
+            <img height="660px" width="100%"  srcset="./img/IMG_9426_small.jpg 500w,./img/IMG_9426.jpg  900w" src="" alt="">
             <!-- <img height="100%" width="100%" src="./img/IMG_9426a.jpg" alt=""> -->
           </li>
           <li class="splide__slide">
-            <img height="580px" width="100%" src="./img/new Stock/D.jpg" alt="">
+            <img height="660px" width="100%" src="./img/new Stock/D.jpg" alt="">
           </li>
         </ul> 
       </div> 
     </div>   
-
-  </div>
-
-
-
-  <!-- ***************************** Mobile Only ************************ -->
-<!--   <div class=" hide-on-med-and-up mobisle-hero">
-         <div class=" center ">
-              <h1 class="header center white-text text-darken-4">Welcome to Diski Nine9</h1>
-              <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
-            </div>  
-
-      <div id="splide">
-        <div class="splide__track" id="splide-track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <img height="80%" width="20%" src="./img/42_b.jpg" alt="">
-            </li>
-            <li class="splide__slide">
-              <img height="660px" width="100%" src="./img/IMG_8188.JPG" alt="">
-            </li>
-            <li class="splide__slide">
-              <img height="660px" width="100%" src="./img/IMG_9426a.jpg" alt="">
-            </li>
-            <li class="splide__slide">
-              <img height="660px" width="100%" src="./img/new Stock/D.jpg" alt="">
-            </li>
-          </ul> 
-        </div> 
-      </div>  
-  </div> -->
+  </div> <!-- End of mobile -->
 
   <div class=" catchy">
     <div class="section">
@@ -354,7 +246,7 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" id="worldOfChamps">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -406,8 +298,8 @@
         <div class="col  s2 ">
           <h5 class="white-text">Explore</h5>
           <ul class="footer-list">
-            <li><a class="white-text" href="#!">About</a></li>
-            <li><a class="white-text" href="#!">Programmes</a></li>
+            <li><a class="white-text" href="About-us.html">About</a></li>
+            <li><a class="white-text" href="programmes.html">Programmes</a></li>
             <li><a class="white-text" href="#!">Galery</a></li>
             <li><a class="white-text" href="#!">Tournaments</a></li>
           </ul>
@@ -455,7 +347,7 @@
         <div class="col l3 s12">
            <h5 class="white-text">Explore</h5>
           <ul class="mobile-footer-list">
-            <li><a class="white-text" href="#!">About</a></li>
+            <li><a class="white-text" href="About-us.html">About</a></li>
             <li><a class="white-text" href="#!">Programmes</a></li>
             <li><a class="white-text" href="#!">Galery</a></li>
             <li><a class="white-text" href="#!">Tournaments</a></li>
